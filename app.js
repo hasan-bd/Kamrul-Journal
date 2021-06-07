@@ -30,9 +30,15 @@ app.get('/contact',function(req,res){
 })
 
 app.get('/compose',function(req,res){
+  // console.log(req.body.contentForPublish);
   res.render('compose')
 })
 
+app.post('/compose',function(req,res){
+  // console.log(req.body.contactPageContent);
+  var i = req.body.postTitle
+  console.log(i);
+})
 
 
 
