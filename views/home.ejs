@@ -2,9 +2,12 @@
 
 <h1>Home</h1>
 <p><%= startingContent %></p>
-<% for (let i=0; i<post.length;i++){ %>
-<% console.log(post[i].title)  %>
-<% } %>
+
+
+<% post.forEach(function(kamrul){ %>
+  <% console.log(kamrul.title); %>
+<% }) %>
+<%# Here kamrul is anonomus function %>
 
 
 <%- include('partials/footer') %>
