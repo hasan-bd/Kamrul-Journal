@@ -46,6 +46,18 @@ posts.push(post)
 res.redirect('/')
 })
 
+app.get('/posts/:postName',function(req,res){
+const requestName = req.params.postName
+posts.forEach(function(kamrul){
+  const storedName = kamrul.title
+  if(storedName=== requestName){
+    console.log('Match Found');
+
+    // Note: kamrul er jaigai j kono name delei hobe no problem
+  }
+})
+})
+
 
 
 
