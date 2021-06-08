@@ -6,7 +6,9 @@
 
 <% post.forEach(function(kamrul){ %>
   <h1><%= kamrul.title %></h1>
-  <p><%= kamrul.content.substring(0,180)+'...' %></p>
+  <p><%= kamrul.content.substring(0,180)+'...'%>
+    <a href="/posts/<%= kamrul.title %>">Read More</a>
+  </p>
 <% }) %>
 <%# Here kamrul is anonomus function %>
 

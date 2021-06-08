@@ -53,7 +53,7 @@ const requestName = _.lowerCase(req.params.postName)
 posts.forEach(function(kamrul){
   const storedName = _.lowerCase(kamrul.title)
   if(storedName=== requestName){
-    console.log('Match Found');
+    // console.log('Match Found');
     res.render('post',{title: kamrul.title, content: kamrul.content})
   }  // Note: kamrul er jaigai j kono name delei hobe no problem
 })
